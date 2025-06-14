@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+
+    --color-my: #000000;
+    --color-black: #333333;
+    --font-poppins: Poppins, sans-serif;
+}
+
+@layer base {
+    .dark {
+        --color-my: #ffffff;
+        --color-black: #ffffff;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
