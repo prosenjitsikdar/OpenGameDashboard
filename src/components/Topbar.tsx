@@ -67,6 +67,8 @@ const Topbar = () => {
                 <button
                     className="inline-flex items-center cursor-pointer font-poppins px-2 md:px-4 text-[13px] md:text-[16px] py-1 md:py-2 rounded-md text-white bg-green-600 hover:bg-green-700 active:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-300 transition"
                     onClick={() => {
+                        window.location.href = `http://141.136.42.134:7000/`
+
                         setLoading(true);
                         setTimeout(() => setLoading(false), 1000);
                     }}
